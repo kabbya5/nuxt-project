@@ -30,7 +30,7 @@ const route = useRoute();
 const {toTitleCase} = useUtilities();
 
 useHead({
-    title:`${route.params.make ? toTitleCase(route.params.make) : 'Cars' } 
+    title:`${route.params.make ? toTitleCase(route.params.make) : 'Cars'} 
      in ${toTitleCase(route.params.city)}`,
 });
 
