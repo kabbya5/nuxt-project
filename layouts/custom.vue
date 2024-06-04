@@ -1,7 +1,7 @@
 <template> 
 <div>
     <NavBar/>
-    <div class="pt-10">
+    <div class="pt-2 w-[600px] mx-auto">
         <slot />
     </div>
 </div>

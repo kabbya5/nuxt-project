@@ -10,8 +10,21 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  buildModules: [
+    '@nuxtjs/fontawesome',
+  ],
   modules: [
     '@nuxt/image',
     '@vueuse/nuxt',
-  ]
+  ],
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
+  plugins: [
+    '~/plugins/fontawesome.js',
+  ],
 })
