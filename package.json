@@ -18,11 +18,14 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@nuxt/image": "^1.4.0",
-    "@vueuse/nuxt": "^10.9.0"
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/nuxt": "^10.9.0",
+    "pinia": "^2.1.7"
   }
 }

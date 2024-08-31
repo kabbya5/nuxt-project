@@ -8,5 +8,4 @@ export const useUtilities = () => {
     )
   }
   return { toTitleCase, }
-
 }

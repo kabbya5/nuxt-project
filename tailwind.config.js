@@ -9,7 +9,19 @@ module.exports = {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        // Optional: Define custom dark mode media queries if needed
+      },
+      colors: {
+        primary: {
+          DEFAULT: '#007bff', // Light mode color
+          dark: '#171a29', // Dark mode color
+        },
+        // ...other color customizations for dark mode
+      },
+    },
   },
+  darkMode:'class',
   plugins: [],
 }

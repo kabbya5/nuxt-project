@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     '@vueuse/nuxt',
+    '@pinia/nuxt',
   ],
   fontawesome: {
     component: 'fa',
