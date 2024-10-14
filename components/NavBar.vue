@@ -15,6 +15,8 @@
 
             <NuxtLink :to="{name:'name-generator'}" class="text-2xl font-momo dark:text-white"> Name Generator </NuxtLink>
 
+            <NuxtLink :to="{name:'resturent'}" class="text-2xl font-momo dark:text-white dark:hover:text-blue-800"> Resturent </NuxtLink> 
+
             <div class="cursor-pointer dark:text-white"
                 @click="store.toggleDarkMode">
                 <fa :icon="['far', isDarkMode ? 'moon' : 'sun']" /> {{ isDarkMode }}

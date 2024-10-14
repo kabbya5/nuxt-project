@@ -1,0 +1,62 @@
+[
+    {
+        "menuType": "Appetizers",
+        "items": [
+            {
+                "id": 1,
+                "name": "Garlic Bread",
+                "image_url": "https://www.simplyrecipes.com/thmb/5JwdiUjcSPTxyuhmdqv8pM8kWs0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Garlic-Bread-METHOD-2-3-1c5f5cfa8bf6408c84c0596eea83f8e8.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Bruschetta",
+                "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bruschetta-recipe-1-2448fad.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Stuffed Mushrooms",
+                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzINWhsg5eJBfwOhhdZT_TO-kDrcNf5lXL6g&s"
+            }
+        ]
+    },
+    {
+        "menuType": "Main Courses",
+        "items": [
+            {
+                "id": 1,
+                "name": "Spaghetti Carbonara",
+                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZvB0-nxlVvA6OOCc91vBme8YnyRhGOcLuw&s"
+            },
+            {
+                "id": 2,
+                "name": "Chicken Alfredo",
+                "image_url": "https://www.budgetbytes.com/wp-content/uploads/2022/07/Chicken-Alfredo-above.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Margherita Pizza",
+                "image_url": "https://www.allrecipes.com/thmb/dA8YLuNy2HMa9s-tSTiFYjPdXy0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5225433-four-cheese-margherita-pizza-Christina-4x3-1-29b0fe4316b74017a5ae437e9ebb319d.jpg"
+            }
+        ]
+    },
+    {
+        "menuType": "Desserts",
+        "items": [
+            {
+                "id": 1,
+                "name": "Tiramisu",
+                "image_url": "https://www.simplyrecipes.com/thmb/Tiramisu-1-0b8b02e12b5a4d1b8c5a8914dfd1a9d3.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Panna Cotta",
+                "image_url": "https://www.simplyrecipes.com/thmb/Panna-Cotta-1-3ef8f98b8cfe40349d9c0b7e9624a6fd.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Lemon Sorbet",
+                "image_url": "https://www.simplyrecipes.com/thmb/Lemon-Sorbet-1-6a6d3b2205894d3e89d6a5f4db8e78a7.jpg"
+            }
+        ]
+    }
+]
