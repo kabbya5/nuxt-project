@@ -20,22 +20,19 @@
             <NuxtLink :to="{name:'resturent'}" class="text-2xl font-momo dark:text-white dark:hover:text-blue-800"> Resturent </NuxtLink> 
 
             <div class="cursor-pointer dark:text-white"
-                @click="store.toggleDarkMode">
-                <fa :icon="['far', isDarkMode ? 'moon' : 'sun']" /> {{ isDarkMode }}
+                @click="togglerDarkMode">
+                <fa :icon="['far', isDarkMode? 'moon' : 'sun']" /> {{ isDarkMode }}
             </div>
         </header>
         <!-- NAVBAR -->
     </div>
 </template> 
 
-<script setup>
+<script setup lang="ts">
 
 const user = useUser();
 
-import { useDarkModeStore } from '~/store/darkModeStore'; // Import the store
-
-const store = useDarkModeStore();
-const isDarkMode = computed(() => store.isDarkMode);
+const {isDarkMode, togglerDarkMode} = useDarkMode;
 
 
 const logout = () => {
