@@ -1,9 +1,8 @@
 <template> 
-    <div class="bg-slate-400/60 dark:bg-black">
+    <div class="bg-slate-400/60 dark:bg-black" style="background-repeat: no-repeat;background-size: cover;" :style="{ backgroundImage: `url(${background})` }">
         <div class="container mx-auto">
 
             <div class="h-screen relative overflow-hidden">
-                <img src="" alt="">
                 <div class="absolute w-full top-0 overlay">
 
                 </div>
@@ -34,12 +33,35 @@
 <script setup lang="ts">
     const search = ref('Toronto');
     const input = ref('');
+    const background = ref('');
 
     const appId = '9775dcbc340331020d4799180a5e0456'; 
 
-    const {data:city, error} = useFetch(
-        () => `https://api.openweathermap.org/data/2.5/weather?q=${search.value}&units=metric&appid=${appId}`
-    )
+    // const {data:city, error} = useFetch(
+    //     () => `https://api.openweathermap.org/data/2.5/weather?q=${search.value}&units=metric&appid=${appId}`
+    // )
+
+    const {data:city, error} = useAsyncData('city',async() =>{
+        const response = await $fetch(
+            `https://api.openweathermap.org/data/2.5/weather?q=${search.value}&units=metric&appid=${appId}`,
+        );
+
+        const temp = response.main.temp;
+
+        if(temp <= - 10){
+           background.value = 'https://efirq7mmtwd.exactdn.com/wp-content/uploads/2023/12/snowy-landscape-385473973.jpg'; 
+        }else if(temp > -10 && temp <= 10){
+            background.value = 'https://media.kgw.com/assets/WTIC/images/c1adf01e-1db8-439b-bdc3-891934f4d383/c1adf01e-1db8-439b-bdc3-891934f4d383_750x422.jpg';
+        }else if(temp > 0 && temp <= 10){
+            background.value = 'https://cdn.britannica.com/05/155405-050-F8969EE6/Spring-flowers-fruit-trees-bloom.jpg';
+        }else{
+            background.value = 'https://cdn.pixabay.com/photo/2023/07/08/04/58/sunset-8113697_640.jpg'; 
+        }
+
+        return response;
+    },{
+        watch:[search]
+    });
         
     const handelClick = () =>{
         const formatedSearch = input.value.trim().split(' ').join('+');
